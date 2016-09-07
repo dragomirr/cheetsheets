@@ -1,0 +1,6 @@
+# Changing remote url
+git remote set-url origin <https/ssh url>
+# List existing remotes
+git remote -v
+# Add remote
+git remote add origin <https/ssh url>
