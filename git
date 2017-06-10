@@ -1,6 +1,8 @@
 # Changing remote url
 git remote set-url origin <https/ssh url>
-# List existing remotes
+# # List existing remotes
 git remote -v
-# Add remote
+# # Add remote
 git remote add origin <https/ssh url>
+#list file diff between branches
+git diff --name-status  master..someBranch

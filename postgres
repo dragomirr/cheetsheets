@@ -1,0 +1,10 @@
+# get privileges for table
+SELECT grantee, privilege_type 
+FROM information_schema.role_table_grants 
+WHERE table_name='mytable'
+# or
+SELECT grantee, string_agg(privilege_type, ', ') AS privileges
+FROM information_schema.role_table_grants 
+WHERE table_name='mytable'   
+GROUP BY grantee;
+# 
