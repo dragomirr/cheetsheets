@@ -6,3 +6,5 @@ git remote -v
 git remote add origin <https/ssh url>
 #list file diff between branches
 git diff --name-status  master..someBranch
+# undelete file
+git checkout <commit with file> $file

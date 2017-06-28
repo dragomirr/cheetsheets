@@ -9,3 +9,5 @@ WHERE table_name='mytable'
 GROUP BY grantee;
 #  display all privileges for role
 select *  FROM information_schema.table_privileges where grantee = 'newrole';
+# transaction that inserted the row (xmin) and transaction that deleted the row (xmax)
+select xmin, xmax, domainid from domain;
