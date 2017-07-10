@@ -1,0 +1,5 @@
+# lookup app engine ip blocks
+nslookup -q=TXT _cloud-netblocks.googleusercontent.com 8.8.8.8
+
+# lookup block ip address
+nslookup -q=TXT _cloud-netblocks1.googleusercontent.com 8.8.8.8

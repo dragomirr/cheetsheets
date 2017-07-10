@@ -1,0 +1,2 @@
+# cut video file
+ffmpeg -ss 00:50 -i input.mkv -t 29:46 -acodec copy -vcodec copy out.mkv
