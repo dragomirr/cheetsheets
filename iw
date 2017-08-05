@@ -1,0 +1,5 @@
+# scan
+iw dev <interface> scan
+
+# connect wpa/wpa2
+wpa_supplicant -i <interface> -c <(wpa_passphrase "<SSID>" "<PASSPHRASE>")
