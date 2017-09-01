@@ -1,0 +1,17 @@
+# view messages from specific pid
+journalctl _PID=19487
+# view messages from particular unit
+journalctl -u httpd
+# messages from specific user or group
+journalctl _UID=1000
+journalctl _UID=1000 --since today
+# view messages base on priority 0 – emerg, 1 – alert, 2 – crit, 3 – err, 4 – warning, 5 – notice, 6 – info, 7 – debug
+journalctl -p 1..4
+journalctl -p 1
+# journal disk usage
+journalctl --disk-usage
+# delete archived journal files
+sudo journalctl --vacuum-size=50M | --vacuum-time=1years | --vacuum-files=4
+# rotate journalctl entries
+sudo journalctl --rotate
+
