@@ -1,0 +1,20 @@
+# generate key
+gpg --gen-key
+# export a public key into file public.key
+gpg --export -a "User Name" > public.key
+# export a private key
+gpg --export-secret-key -a "User Name" > private.key
+# import a public key:
+gpg --import public.key
+# delete a public key
+gpg --delete-key "User Name"
+# delete an private key
+gpg --delete-secret-key "User Name"
+# list pub keys
+gpg --list-keys
+# list private keys
+gpg --list-secret-keys
+# encrypt data for receiver and specify his public gpg key
+gpg -e -u "Sender User Name" -r "Receiver User Name" somefile
+# decrypt data
+gpg -d mydata.tar.gpg
