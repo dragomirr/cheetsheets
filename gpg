@@ -18,3 +18,5 @@ gpg --list-secret-keys
 gpg -e -u "Sender User Name" -r "Receiver User Name" somefile
 # decrypt data
 gpg -d mydata.tar.gpg
+# list key data
+gpg <filename> / gpg --with-fingerprint <filename>
