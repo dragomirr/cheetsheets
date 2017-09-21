@@ -1,0 +1,2 @@
+# list groups
+ansible -i inventory host(s) -m debug -a 'var=groups' | 'var=groups.keys()'
