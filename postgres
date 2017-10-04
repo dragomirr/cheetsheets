@@ -32,3 +32,10 @@ pg_cancel_backend( pid ) # The process ID (PID) of the query to be canceled. You
 ### terminate session
 
 pg_terminate_backend( pid ) # The process ID of the session to be terminated. Requires an integer value.
+
+### number of connections
+
+SELECT sum(numbackends) FROM pg_stat_database;
+
+### drop owned to be able to drop user
+DROP OWNED BY <user>;
