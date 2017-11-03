@@ -1,4 +1,4 @@
 # vim:set ft=sh:
 # VM sizes in west eu
-azure vm sizes --location=westeurope
+az vm list-sizes --location=westeurope
 

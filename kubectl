@@ -1,0 +1,2 @@
+# get into container in pod
+kubectl exec <pod_name> --stdin --tty -c <container_name> /bin/sh
