@@ -1,0 +1,2 @@
+socat TCP4-LISTEN:4250,bind=localhost,fork,reuseaddr SOCKS4A:localhost:<remote_address>:6697,socksport=9008
+                                                     SOCKS4A:<socks-server>:<host>:<port>,sockesport=<socks_port>
