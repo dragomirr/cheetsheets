@@ -1,0 +1,2 @@
+# ssh socks5 proxy
+ssh -D <port> <server>
