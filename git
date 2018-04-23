@@ -8,3 +8,5 @@ git remote add origin <https/ssh url>
 git diff --name-status  master..someBranch
 # undelete file
 git checkout <commit with file> $file
+# pretty print
+git log --since='3 days ago' --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
