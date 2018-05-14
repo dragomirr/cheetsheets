@@ -2,3 +2,5 @@
 # VM sizes in west eu
 az vm list-sizes --location=westeurope
 
+# create service principal
+az ad sp create-for-rbac --query '{"client_id": appId, "secret": password, "tenant": tenant}'
