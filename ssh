@@ -1,2 +1,4 @@
 # ssh socks5 proxy
 ssh -D <port> <server>
+# create public key from private
+ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
