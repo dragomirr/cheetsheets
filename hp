@@ -1,0 +1,2 @@
+# enable non working function keys
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_osi=" # change this in /etc/default/grub and update grub
