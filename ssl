@@ -7,4 +7,4 @@ openssl ciphers HIGH
 # create self signed cert
 openssl req -x509 -newkey rsa:4096 -subj /CN=localhost  -nodes -keyout key.pem -out cert.pem -days 365
 # convert crt, cer, der to pem
-openssl x509 -inform der -in certificate.cer -out certificate.pem
+openssl x509 -inform pem -in certificate.cer -outform der -out certificate.pem
