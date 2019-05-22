@@ -1,0 +1,2 @@
+# quick slack post
+curl -XPOST --data-urlencode "payload={'text':'some text'}" SLACK_WEBHOOK
