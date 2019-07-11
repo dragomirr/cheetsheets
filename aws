@@ -1,0 +1,6 @@
+arn:partition:service:region:account-id:resource
+arn:partition:service:region:account-id:resourcetype/resource
+arn:partition:service:region:account-id:resourcetype/resource/qualifier
+arn:partition:service:region:account-id:resourcetype/resource:qualifier
+arn:partition:service:region:account-id:resourcetype:resource
+arn:partition:service:region:account-id:resourcetype:resource:qualifier
