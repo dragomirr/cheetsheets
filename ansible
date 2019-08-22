@@ -2,3 +2,7 @@
 ansible -i inventory host(s) -m debug -a 'var=groups' | 'var=groups.keys()'
 # lookup docs
 ansible-doc -t lookup -l
+# See all variables specific for host
+ansible -m debug -a "var=hostvars['hostname']" localhost
+# See all the inventory variables defined for host
+ansible-inventory --list --yaml
