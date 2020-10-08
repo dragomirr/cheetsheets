@@ -1,0 +1,3 @@
+# issue when unable to change keyboard layout
+# sudo dpkg-reconfigure keyboard-configuration -- possibly not required
+gsettings reset org.gnome.desktop.input-sources xkb-options
