@@ -1,0 +1,5 @@
+# describe consumer group
+/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092  --describe --group $group
+
+# reset lag to earliest
+/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group $group --topic $topic --reset-offsets --to-latest --execute
