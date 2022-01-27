@@ -1,0 +1,3 @@
+# search tasks
+GET _tasks?detailed=true&actions=*/delete/byquery
+GET _tasks?actions=*search&detailed
