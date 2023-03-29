@@ -1,0 +1,5 @@
+# Ask NetworkManager to scan for all the available APs and include the BSSID, Frequency and signal quality info in the list.
+nmcli -f in-use,ssid,bssid,freq,signal,bars dev wifi
+
+# Connect to specific BSSID
+nmcli d wifi connect XX:XX:XX:XX:XX:XX
