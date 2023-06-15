@@ -1,0 +1,2 @@
+# get consumed lcus aggregated per hour
+aws cloudwatch get-metric-statistics --metric-name ConsumedLCUs --start-time 2023-03-30T01:00:00 --end-time 2023-04-02T00:00:00 --period 3600 --namespace AWS/ApplicationELB --statistics Sum --dimensions Name=LoadBalancer,Value=app/my-load-balancer/832abc45672
