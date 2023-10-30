@@ -1,0 +1,5 @@
+# prepare version upgrade
+dnf system-upgrade download --releasever=39
+
+# upgrade
+dnf system-upgrade reboot
