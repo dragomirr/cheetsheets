@@ -25,3 +25,7 @@
 RUN
 ansible-galaxy install -r requirements.yml
 
+# update role
+# this requires ansible galaxy config in ansible.cfg
+# anonymous role pull is allowed, but importing requires api token and configuration
+ansible-galaxy role import dragomirr ansible-role-kafka
