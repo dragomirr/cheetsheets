@@ -6,3 +6,7 @@ ansible-doc -t lookup -l
 ansible -m debug -a "var=hostvars['hostname']" localhost
 # See all the inventory variables defined for host
 ansible-inventory --list --yaml
+# ansibe vaule decrypt
+echo "$ANSIBLE_VAULE;1.1;AES256........" | tr -d ' ' | ansible-vault decrypt
+ansible localhost -m debug -a "var=var1" -e @hosts/group_vars.yml
+yq -r '.var1' vars.yml | tr -d ' ' | ansible-vault decrypt

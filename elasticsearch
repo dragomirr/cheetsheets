@@ -1,3 +1,9 @@
 # search tasks
 GET _tasks?detailed=true&actions=*/delete/byquery
 GET _tasks?actions=*search&detailed
+
+# get shards per node
+GET _cat/allocation?v=true&h=shards,node
+
+# get heap percents
+GET _cat/nodes?v=true&h=name,node*,heap*
