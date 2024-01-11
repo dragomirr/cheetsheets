@@ -1,0 +1,2 @@
+# quick scan of machines without trying to see if any port is open
+nmap -sn 192.168.0.0/24 [network2]
