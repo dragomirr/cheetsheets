@@ -20,3 +20,10 @@ gpg -e -u "Sender User Name" -r "Receiver User Name" somefile
 gpg -d mydata.tar.gpg
 # list key data
 gpg <filename> / gpg --with-fingerprint <filename>
+# export secret key data
+gpg --export-secret-keys ID
+# export secret key ascii
+gpg --armor --export-secret-keys ID
+# trust unknown key
+gpg --edit-key user@useremail.com
+gpg> trust
