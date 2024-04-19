@@ -1,0 +1,2 @@
+# strip top level directory. this will also strip top level files
+tar xf archive.tar --strip-components=1
