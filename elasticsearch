@@ -7,3 +7,10 @@ GET _cat/allocation?v=true&h=shards,node
 
 # get heap percents
 GET _cat/nodes?v=true&h=name,node*,heap*
+
+# get aliases
+GET _cat/aliases
+
+# ilm
+# explain lifecycle
+GET $index/_ilm/explain?human
