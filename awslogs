@@ -1,0 +1,8 @@
+# https://github.com/jorgebastida/awslogs
+
+# get logs from production logs group, full_content_api stream, full_content_api container from 3 days ago
+awslogs get production full_content_api/full_content_api/* --start "3d ago"
+
+# get logs from production logs group, full_content_api stream, full_content_api container starting from 1 hour ago
+# watch incoming logs
+awslogs get production full_content_api/full_content_api/* --start "1h ago" --watch
