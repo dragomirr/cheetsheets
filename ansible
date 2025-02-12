@@ -9,6 +9,7 @@ ansible-inventory --list --yaml
 # ansibe vaule decrypt
 echo "$ANSIBLE_VAULE;1.1;AES256........" | tr -d ' ' | ansible-vault decrypt
 ansible localhost -m debug -a "var=var1" -e @hosts/group_vars.yml
+ansible --vault-password-file .vault_pass.txt -i hosts some_host/group -m debug -a 'var=some_password_var'
 yq -r '.var1' vars.yml | tr -d ' ' | ansible-vault decrypt
 # ansible.eda rulebook
 ansible-rulebook --rulebook webhook-example.yml -i inventory.yml --print-events
