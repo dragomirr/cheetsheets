@@ -1,0 +1,3 @@
+# check changes to sensitive output
+tf plan -target=vault_generic_secret.foobar -out=/tmp/tfplan
+tf show -json /tmp/tfplan  | jq -r ".resource_changes[0].change.before.data , .resource_changes[0].change.after.data"
