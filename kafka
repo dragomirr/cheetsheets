@@ -6,3 +6,6 @@
 
 # delete consumer group
 /opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group $group
+
+# follow topic messages
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic $topic --from-beginning
