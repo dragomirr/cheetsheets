@@ -1,2 +1,6 @@
 # list gpg keys
 rpm -qa --qf '%{VERSION}-%{RELEASE} %{SUMMARY}\n' gpg-pubkey*
+rpm -q --queryformat "%{SUMMARY} gpg-pubkey-%{VERSION}-%{RELEASE}\n" $(rpm -q gpg-pubkey)
+
+# show info about specific key
+rpm -qi gpg-pubkey-VERSION-RELEASE
