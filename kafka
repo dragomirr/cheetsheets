@@ -1,11 +1,17 @@
 # describe consumer group
-/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092  --describe --group $group
+kafka-consumer-groups.sh --bootstrap-server localhost:9092  --describe --group $group
 
 # reset lag to earliest
-/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group $group --topic $topic --reset-offsets --to-latest --execute
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group $group --topic $topic --reset-offsets --to-latest --execute
 
 # delete consumer group
-/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group $group
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group $group
 
 # follow topic messages
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic $topic --from-beginning
+
+# list topics
+
+
+# kafka operations tools
+https://docs.confluent.io/kafka/operations-tools/kafka-tools.html
