@@ -1,2 +1,5 @@
 # security analysis
 systemd-analyze security polkit.service
+
+# man config
+man 5 systemd.{path,mount,service,socket,timer,automount...}
