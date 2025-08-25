@@ -1,5 +1,8 @@
 # security analysis
 systemd-analyze security polkit.service
 
+# now what syscalls are part of a set
+systemd-analyze syscall-filter @mount @swap .....
+
 # man config
 man 5 systemd.{path,mount,service,socket,timer,automount...}
