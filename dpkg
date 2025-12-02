@@ -1,0 +1,3 @@
+# list configuration files of a package
+dpkg -L package
+cat /var/lib/dpkg/info/<package>.conffiles
