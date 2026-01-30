@@ -1,0 +1,5 @@
+# get alerts with alertname
+curl -s 127.0.0.1:9093/api/v2/alerts | jq '.[] | select(.labels.alertname=="noTentacleClicks")'
+
+# get alert with fingerprint
+curl -s 127.0.0.1:9093/api/v2/alerts | jq '.[] | select(.fingerprint=="ac6c15a31a14aec6")'
