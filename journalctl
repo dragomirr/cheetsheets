@@ -14,4 +14,6 @@ journalctl --disk-usage
 sudo journalctl --vacuum-size=50M | --vacuum-time=1years | --vacuum-files=4
 # rotate journalctl entries
 sudo journalctl --rotate
-
+# list last boot logs with priority err
+journalctl --boot=-1 --priority=err
+journalctl -b -1 -p err
