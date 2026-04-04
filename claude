@@ -1,0 +1,12 @@
+# thinking modes
+Think
+Think more
+Think a lot
+Think longer
+Ultrathink
+
+# shortcuts
+Esc - Interrupt Claude, allowing you to redirect or correct it. Also useful to fix issues with \# memries.
+Double tap Esc - Rewind the conversation to an earlier point in time. Allows you to maintain valuable context.
+/compact - Summarize conversation and continue. Helps Claude stay focused but remember what it has learned in the current session.
+/clear - Dumps current conversation history. Useful when switching between different tasks.
