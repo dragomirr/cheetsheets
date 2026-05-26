@@ -1,5 +1,19 @@
-# get into container in pod
+# get into container in pod | exec
 kubectl exec <pod_name> --stdin --tty -c <container_name> /bin/sh
+kubectl exec <pod_name> -it -c <container_name> -- /bin/sh
 
-# forward localport to pod
+# forward localport to pod | port-forward
 kubectl port-forward $POD_NAME 3000
+
+# undo deployment | deployment rollout
+kubectl rollout undo deployment <deployment name>
+
+# set deployment image | deployment
+kubectl set image deployments kubernetes-bootcamp kubernetes-bootcamp=docker.io/jocatalin/kubernetes-bootcamp:v1
+
+# create configmap | configmap
+kubectl create configmap sport --from-literal=sport=football
+
+# expose deployment | deployment | service
+kubectl expose deployment deployment1 --name service1 --port 8080 --target-port 8080
+kubectl expose deployment deployment2 --type NodePort --port 8080

@@ -10,8 +10,8 @@ kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group $gro
 # follow topic messages
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic $topic --from-beginning
 
-# list topics
-
-
 # kafka operations tools
 https://docs.confluent.io/kafka/operations-tools/kafka-tools.html
+
+# check quorum
+kafka-metadata-quorum.sh --bootstrap-server :9092 describe --status
